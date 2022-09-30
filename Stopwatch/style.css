@@ -1,0 +1,83 @@
+:root{
+    --primary: maroon;
+    --dark: #1F2937;
+    --darker: #111827;
+    --light: #F3F4F6;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-family: 'Fira sans', sans-serif;
+}
+
+body{
+    background: var(--dark);
+    color: var(--light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.watch{
+    text-align: center;
+    background-color: var(--darker);
+    width: 100%;
+    max-width: 400px;
+    height: 200px;
+    margin: 4rem auto;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    border: 1px solid salmon;
+}
+
+h2{
+    position: absolute;
+    top: 10%;
+    left: 43%;
+    color: salmon;
+}
+.time{
+    font-size: 3rem;
+    font-weight: 300;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+.controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.controls button{
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+    user-select: none;
+    cursor: pointer;
+    color: var(--light);
+    background-color: var(--primary);
+    border: 1px solid #F3F4F6;
+    border-radius: 0.5rem;
+    transition: 0.4s;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+button:hover{
+    opacity: 0.7;
+}
+
+button:active{
+    background-color: salmon;
+}

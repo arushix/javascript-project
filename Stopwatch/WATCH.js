@@ -17,7 +17,7 @@ reset_btn.addEventListener('click',reset);
 function timer(){
     seconds++;
 
-    let hrs = Math.floor(seconds / 3600);
+    let hrs = Math.floor( seconds/ 3600);
     let mins = Math.floor((seconds-(hrs*3600))/60);
     let secs = seconds % 60;
 

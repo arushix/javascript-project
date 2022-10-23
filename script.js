@@ -13,7 +13,7 @@ document.querySelector('.check').addEventListener('click', function () {
 
   // When no number is entered
   if (!guessNumber) {
-    displayMessage('Please enter a valid number!');
+    displayMessage('An Integer must be Entered!');
   }
   //when number is too high or too low
   else if (guessNumber !== secretNumber) {
@@ -50,6 +50,8 @@ document.querySelector('.again').addEventListener('click', function () {
   document.querySelector('.number').textContent = '?';
   document.querySelector('.score').textContent = gameScore;
   document.querySelector('.number').style.width = '15rem';
-  document.querySelector('body').style.backgroundColor = '#222';
+  document.querySelector('body').style.backgroundColor = '#3642A1'
+
+';
   document.querySelector('.guess').value = '';
 });

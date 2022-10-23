@@ -14,6 +14,20 @@
       <button class="btn again">Again!</button>
       <div class="number">?</div>
     </header>
+    
+    <div id="overlay" onclick="off()">
+      <div id="text">Winner</div>
+    </div>
+    <div style="padding:20px">
+      <button onclick="on()">Show</button>
+    </div>
+
+    <script>
+      function on() {
+        document.getElementById("overlay").style.display = "block";
+      }
+    </script>
+    
     <main>
       <section class="left">
         <input type="number" class="guess" />
